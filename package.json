@@ -30,7 +30,8 @@
     "devchain:deploySubgraph:eip20Token": "bash ./test_integration/scripts/eip20_token/deploy_subgraph.sh",
     "create_keys:testnet": "TS_NODE_FILES=true; TS_NODE_TRANSPILE_ONLY=true; node -r ts-node/register ./demo/bin/create_staker_redeemer.ts",
     "request_stake:testnet": "TS_NODE_FILES=true; TS_NODE_TRANSPILE_ONLY=true; node -r ts-node/register ./demo/bin/request_stake_testnet.ts",
-    "request_redeem:testnet": "TS_NODE_FILES=true; TS_NODE_TRANSPILE_ONLY=true; node -r ts-node/register ./demo/bin/request_redeem_testnet.ts"
+    "request_redeem:testnet": "TS_NODE_FILES=true; TS_NODE_TRANSPILE_ONLY=true; node -r ts-node/register ./demo/bin/request_redeem_testnet.ts",
+    "create:account": "ts-node scripts/CreateAccounts.ts"
   },
   "repository": {
     "type": "git",
@@ -57,6 +58,7 @@
     "@openst/mosaic-chains": "^0.1.0-alpha.9",
     "@openst/mosaic-contracts": "^0.12.0",
     "@openst/mosaic-proof": "^0.1.0-alpha.1",
+    "@types/inquirer": "^6.5.0",
     "apollo-cache-inmemory": "1.6.2",
     "apollo-client": "2.6.0",
     "apollo-link-http": "1.5.15",
